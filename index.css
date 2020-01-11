@@ -1,0 +1,15 @@
+#TVs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+iframe {
+    width: 50%;
+    height: 50%;
+    flex-grow: 1;
+}

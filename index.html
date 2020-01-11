@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>多電視直播網頁</title>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Semantic-UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+    <!-- Vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="TVs">
+        <iframe :key="index" v-for="(data, index) in TVs" :src="data.video_id" frameborder="0" allowfullscreen :width="data.length"></iframe>
+    </div>
+</body>
+
+</html>
